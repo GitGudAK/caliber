@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+data/
+# sample models: license unconfirmed, keep out of git
+samples/
+.DS_Store
+*.log
+
+# LinkedIn drafts include the unlicensed sample watch; keep out of git
+docs/linkedin/
+
+# Local-only notes
+docs/PROJECT-SUMMARY.md
+
+# Screenshots show the sample watch (license unconfirmed)
+docs/screenshots/

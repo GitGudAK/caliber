@@ -58,3 +58,14 @@ IMAGE-BLASTER uses a few generation models:
 ### Development
 
 - remove `/app` from the `.claudeignore` file to give Claude the ability to change the React viewer.
+
+## Caliber — built on top of image-blaster
+
+[`caliber/`](caliber/) is a local product-video studio for watches built on this pipeline. Upload a 3D watch model, place it at true scale in an image-blasted macro world (World Labs Marble splats), light it from the world's own panorama with real shadows, animate a camera move with depth of field, add an ElevenLabs ambience, and export an MP4 from the browser.
+
+```bash
+cd caliber && npm install && cp .env.example .env   # add WORLDLABS_API_KEY and FAL_KEY
+npm run dev                                          # http://localhost:5173
+```
+
+Paid API calls are always shown for approval first and fingerprinted so the same request is never paid for twice. See [`caliber/CLAUDE.md`](caliber/CLAUDE.md).
